@@ -20,7 +20,8 @@ RUN sudo apt-get install build-essential -y
 RUN curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.38.0/install.sh | bash
 RUN bash -i -c 'nvm install node'
 
-# WORKDIR ~/project
+WORKDIR ~/project
+RUN npm install
 
 # RUN code-server --install-extension esbenp.prettier-vscode
 # RUN sudo apt-get install -y build-essential
