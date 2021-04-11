@@ -15,6 +15,7 @@ RUN curl https://rclone.org/install.sh | sudo bash
 
 # You can add custom software and dependencies for your environment here. Some examples:
 RUN sudo apt-get install nodejs -y
+RUN sudo apt-get install npm -y
 
 # WORKDIR ~/project
 
