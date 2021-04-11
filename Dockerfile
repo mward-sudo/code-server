@@ -14,7 +14,7 @@ RUN sudo apt-get update && sudo apt-get install unzip -y
 RUN curl https://rclone.org/install.sh | sudo bash
 
 # You can add custom software and dependencies for your environment here. Some examples:
-RUN sudo apt-get install build-essentials -y
+RUN sudo apt-get install build-essential -y
 RUN sudo apt-get install nodejs@latest -y
 RUN sudo apt-get install npm@latest -y
 
