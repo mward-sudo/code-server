@@ -15,11 +15,13 @@ RUN curl https://rclone.org/install.sh | sudo bash
 
 # You can add custom software and dependencies for your environment here. Some examples:
 
+WORKDIR ~/project
+
 # RUN code-server --install-extension esbenp.prettier-vscode
 # RUN sudo apt-get install -y build-essential
 # RUN COPY myTool /home/coder/myTool
 RUN sudo apt-get install nodejs -y
-RUN npm install nextjs react react-dom
+RUN npm install
 RUN git config --global user.name "Michael Ward"
 RUN git config --global user.email mward82@gmail.com
 
