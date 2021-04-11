@@ -17,7 +17,7 @@ RUN curl https://rclone.org/install.sh | sudo bash
 
 
 ENV NODE_VERSION=15.4.0
-RUN apt install -y curl
+RUN sudo apt install -y curl
 RUN curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.34.0/install.sh | bash
 ENV NVM_DIR=/root/.nvm
 RUN . "$NVM_DIR/nvm.sh" && nvm install ${NODE_VERSION}
