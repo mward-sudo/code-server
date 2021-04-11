@@ -18,8 +18,7 @@ RUN sudo apt-get install build-essential -y
 # RUN sudo apt-get install nodejs@latest -y
 # RUN sudo apt-get install npm@latest -y
 RUN curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.38.0/install.sh | bash
-ENV NVM_DIR=/home/coder/.nvm
-RUN nvm install node
+RUN bash -i -c 'nvm install node'
 
 # WORKDIR ~/project
 
