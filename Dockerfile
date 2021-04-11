@@ -18,7 +18,7 @@ RUN curl https://rclone.org/install.sh | sudo bash
 # RUN code-server --install-extension esbenp.prettier-vscode
 # RUN sudo apt-get install -y build-essential
 # RUN COPY myTool /home/coder/myTool
-RUN sudo apt-get install nodejs
+RUN sudo apt-get install nodejs -y
 RUN npm install nextjs react react-dom
 RUN git config --global user.name "Michael Ward"
 RUN git config --global user.email mward82@gmail.com
