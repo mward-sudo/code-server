@@ -15,8 +15,10 @@ RUN curl https://rclone.org/install.sh | sudo bash
 
 # You can add custom software and dependencies for your environment here. Some examples:
 RUN sudo apt-get install build-essential -y
-RUN sudo apt-get install nodejs@latest -y
-RUN sudo apt-get install npm@latest -y
+# RUN sudo apt-get install nodejs@latest -y
+# RUN sudo apt-get install npm@latest -y
+RUN curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.38.0/install.sh | bash
+RUN nvm install node
 
 # WORKDIR ~/project
 
